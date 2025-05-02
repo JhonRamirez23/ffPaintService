@@ -18,9 +18,3 @@ document.querySelectorAll('.about .video-container .controls .control-btn').forE
 let videoContainer = document.querySelector('.about .video-container');
 let videos = document.querySelectorAll('.about .video-container .controls .control-btn');
 let currentIndex = 0;
-
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % videos.length;
-  let nextVideoSrc = videos[currentIndex].getAttribute('data-src');
-  videoContainer.querySelector('.video').src = nextVideoSrc;
-}, 7000);
